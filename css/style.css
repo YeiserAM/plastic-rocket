@@ -260,6 +260,7 @@ footer{color: #fff;background-color:#000;padding: 30px 30px 0;position:relative;
 footer .logo-branding{margin: 30px 0;display: block;}
 footer .logo-branding a{margin: 10px 5px 10px 5px;display: block;}
 footer .logo-branding a img {border-radius: 10px;}
+footer .logo-branding p{ font-size: 14px;}
 footer .bottom-footer{margin: -50px; text-align: center;padding: 50px 0;display:block;}
 footer .bottom-footer .social-links li{margin: 0 3px;}
 footer .bottom-footer .social-links a{margin-top: 10px;display: block;border-bottom: none;}
