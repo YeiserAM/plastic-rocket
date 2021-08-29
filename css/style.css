@@ -542,21 +542,16 @@ footer .bottom-footer a:hover{border-bottom: 2px dotted #fff;color: #fff;}
   }
 
   @media (max-width: 800px){
-    input[type=radio] {
-     
-      top: 10px;
-      left: 50%;
-      width: 18px;
-      height: 18px;
-      opacity: 0.4;
-      transform: translateX(-83px);
-      cursor: pointer;
+    input[type=radio]:nth-child(5) {
+     margin-top: 50px;
+
+    }
   }
   
   
   input[type=radio]:nth-child(5) {
     margin-right: 0px;
-    margin-top: 155px;
+    margin-top: 20px;
   }
   
   input[type=radio]:checked {
