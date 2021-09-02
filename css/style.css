@@ -160,6 +160,7 @@ header.sub-header{background:#1D2027;min-height: 120px;}
 #menu a.navbar-brand:hover{color: #fff;}
 #menu .navbar-brand{margin: 0;height: auto;text-transform: uppercase;padding: 0px 18px;}
 #menu .navbar-brand img{max-height: 90px;}
+@media (max-width: 800px){#menu .navbar-brand img{height: 50px;}}
 #menu .logo {}
 #menu .dropdown-menu {background-color: #1a1c1e;border:none;border-radius: 0;}
 
@@ -177,6 +178,22 @@ header.sub-header{background:#1D2027;min-height: 120px;}
 
 #menu .btn-navbar {font-size: 20px;color: #FFF;padding: 5px 15px;float: right;border: 3px solid #fff;}
 
+@media (max-width: 800px){
+  #menu .container .navbar-header a{
+        font-size: 10px;
+        margin: 10px 15px 0 0;
+ }
+}
+@media (max-width: 800px){
+  #menu ul.nav{
+  margin-top: -20px;
+ }
+}
+@media (max-width: 800px){
+  #menu ul.nav ul li a{
+   font-size: 13px;
+ }
+}
 
 @media  (min-width: 800px) {
     #menu ul.nav {float:right}
@@ -331,6 +348,140 @@ footer .bottom-footer a:hover{border-bottom: 2px dotted #fff;color: #fff;}
 
 .portfolio-box:hover .portfolio-box-caption {opacity: 1;background: rgba(0, 0, 0,.5);}
 .portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-social{opacity: 1;height: auto;}
+
+
+/* Desktop Navigation */
+.nav-menu {
+  margin-top: 35px;
+  
+}
+
+.nav-menu ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-menu li + li {
+  margin-left: 30px;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.nav-menu a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #af5a009d;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 20px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #fff;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.7);
+  transition: ease-in-out 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  height: 200px;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+  outline: none;
+}
+
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+  color: #ff84009d;
+  text-decoration: none;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(9, 9, 9, 0.6);
+  overflow: hidden;
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # About Us
